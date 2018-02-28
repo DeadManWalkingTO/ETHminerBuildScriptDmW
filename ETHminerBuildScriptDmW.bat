@@ -2,7 +2,7 @@ rem ========== PreStart ==========
 @echo off
 
 rem Set version info
-set V=1.3.8
+set V=1.3.9
 
 rem ========== Start ==========
 
@@ -52,7 +52,7 @@ rem ========== Run ==========
 rem Remove old Ethminer's Directory
 echo ==================================================
 echo Remove old Ethminer's Directory
-rmdir ethminer
+rmdir /S /Q ethminer
 echo Done
 echo ==================================================
 echo.
