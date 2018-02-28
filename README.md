@@ -1,23 +1,23 @@
-# ETHminerBuildScriptsDmW
-[![HitCount](http://hits.dwyl.io/DeadManWalkingTO/ETHminerBuildScriptsDmW.svg)](../../)
-[![GitHub release](https://img.shields.io/github/release/DeadManWalkingTO/ETHminerBuildScriptsDmW/all.svg)](../../releases/latest)
-[![GitHub Release Date](https://img.shields.io/github/release-date-pre/DeadManWalkingTO/ETHminerBuildScriptsDmW.svg)](../../releases/latest)
-[![GitHub top language](https://img.shields.io/github/languages/top/DeadManWalkingTO/ETHminerBuildScriptsDmW.svg)](../../)
-[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/DeadManWalkingTO/ETHminerBuildScriptsDmW.svg)](../../)
-[![GitHub license](https://img.shields.io/github/license/DeadManWalkingTO/ETHminerBuildScriptsDmW.svg)](./LICENSE)
+# ETHminerBuildScriptDmW
+[![HitCount](http://hits.dwyl.io/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../)
+[![GitHub release](https://img.shields.io/github/release/DeadManWalkingTO/ETHminerBuildScriptDmW/all.svg)](../../releases/latest)
+[![GitHub Release Date](https://img.shields.io/github/release-date-pre/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../releases/latest)
+[![GitHub top language](https://img.shields.io/github/languages/top/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../)
+[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../)
+[![GitHub license](https://img.shields.io/github/license/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](./LICENSE)
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/DeadManWalkingTO/ETHminerBuildScriptsDmW.svg)](../../)
-[![Github commits (since latest release)](https://img.shields.io/github/commits-since/DeadManWalkingTO/ETHminerBuildScriptsDmW/latest.svg)](../../)
-[![GitHub stars](https://img.shields.io/github/stars/DeadManWalkingTO/ETHminerBuildScriptsDmW.svg)](../../stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/DeadManWalkingTO/ETHminerBuildScriptsDmW.svg)](../../network)
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-ETHminerBuildScriptsDmW.svg)](./README.md)
-> ETHminer Build Scripts by DeadManWalking (DeadManWalkingTO-GitHub) 
+[![GitHub last commit](https://img.shields.io/github/last-commit/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../)
+[![Github commits (since latest release)](https://img.shields.io/github/commits-since/DeadManWalkingTO/ETHminerBuildScriptDmW/latest.svg)](../../)
+[![GitHub stars](https://img.shields.io/github/stars/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../network)
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-ETHminerBuildScriptDmW.svg)](./README.md)
+> ETHminer Build Script by DeadManWalking (DeadManWalkingTO-GitHub) 
 
-ETHminerBuildScriptsDmW an Auto (Download / Configure / Build) Script for Ethminer.
+ETHminerBuildScriptDmW an Auto (Download / Configure / Build) Script for Ethminer.
 Available versions
-* Windows version (ETHminerBuildScriptsDmW.bat)
-* Linux version (ETHminerBuildScriptsDmW.bash)
-* MinGW version (ETHminerBuildScriptsDmW.sh)
+* Windows version (ETHminerBuildScriptDmW.bat)
+* Linux version (ETHminerBuildScriptDmW.bash)
+* MinGW version (ETHminerBuildScriptDmW.sh)
 
 ## Table of Contents
 - [Features](#features)
@@ -47,9 +47,9 @@ Script (No installation required)
 * Download or Clone
 * Unzip
 * Run Script:
-  * Windows version (ETHminerBuildScriptsDmW.bat)
-  * Linux version (ETHminerBuildScriptsDmW.bash)
-  * MinGW version (ETHminerBuildScriptsDmW.sh)
+  * Windows version (ETHminerBuildScriptDmW.bat)
+  * Linux version (ETHminerBuildScriptDmW.bash)
+  * MinGW version (ETHminerBuildScriptDmW.sh)
 * That's all
 
 ## Feedback
