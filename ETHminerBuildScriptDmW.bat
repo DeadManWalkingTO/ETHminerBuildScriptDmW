@@ -2,7 +2,7 @@ rem ========== PreStart ==========
 @echo off
 
 rem Set version info
-set V=1.3.6
+set V=1.3.7
 
 rem ========== Start ==========
 
@@ -36,7 +36,7 @@ call "C:\Program Files (x86)\Microsoft Visual C++ Build Tools\vcbuildtools_msbui
 echo Done
 echo ==================================================
 echo.
-sleep 1
+timeout 1 > nul
 
 rem Back to Directory
 echo ==================================================
@@ -45,7 +45,7 @@ cd "%~dp0\"
 echo Done
 echo ==================================================
 echo.
-sleep 1
+timeout 1 > nul
 
 rem ========== Run ==========
 
