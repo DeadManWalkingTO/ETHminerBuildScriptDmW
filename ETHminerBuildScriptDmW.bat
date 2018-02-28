@@ -2,7 +2,7 @@ rem ========== PreStart ==========
 @echo off
 
 rem Set version info
-set V=1.3.7
+set V=1.3.8
 
 rem ========== Start ==========
 
@@ -143,5 +143,6 @@ rem ========== End ==========
 
 endlocal
 pause
+echo.
 
 rem ========== EoF ==========
