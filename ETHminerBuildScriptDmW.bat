@@ -2,14 +2,14 @@ rem ========== PreStart ==========
 @echo off
 
 rem Set version info
-set V=1.3.5
+set V=1.3.6
 
 rem ========== Start ==========
 
 cls
 echo ###############################################################################
 echo #                                                                             #
-echo #  ETHminerBuildScriptDmW Version %V%                                        #
+echo #  ETHminerBuildScriptDmW Version %V%                                       #
 echo #                                                                             #
 echo #  AUTHOR: DeadManWalking  (DeadManWalkingTO-GitHub)                          #
 echo #                                                                             #
