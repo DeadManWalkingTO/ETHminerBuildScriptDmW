@@ -1,7 +1,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=1.2.4
+V=1.2.5
 
 #========== Start ==========
 
@@ -122,10 +122,14 @@ echo "=================================================="
 echo #
 sleep 1
 
+#ETHminerBuildScriptDmW was completed
 echo "=================================================="
 echo "ETHminerBuildScriptDmW was completed"
 echo "=================================================="
 
 #========== End ==========
+
+read -n1 -r -p "Press any key to continue..." key
+echo #
 
 #========== EoF ==========
