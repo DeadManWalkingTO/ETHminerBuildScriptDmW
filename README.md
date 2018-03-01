@@ -36,6 +36,9 @@ Available versions
 3. Auto Build Ethminer
 4. Display Control Messages
 5. Auto Remove previous compile folders 
+6. Auto install build tools (MinGW)
+7. Auto build latest OpenSSL (MinGW) (Fix #817 issue OpenSSL build error with hunter.)
+
 
 ## Download
 Download [Last release here.](../../releases/latest)
