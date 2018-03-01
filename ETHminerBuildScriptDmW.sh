@@ -1,7 +1,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=2.0.8
+V=2.0.9
 
 #========== Start ==========
 
@@ -63,7 +63,7 @@ sleep 1
 #Build OpenSSL
 echo "=================================================="
 echo "Build OpenSSL (Build to fix the Ethminer's issue #817 - If you get OpenSSL build error with hunter.)"
-read -p "Build OpenSSL? (For Yes type Y or y. Anything else for No.)" -n 1 -r
+read -p "Build latest master OpenSSL? (For Yes type Y or y. Anything else for No.)" -n 1 -r
 echo #
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
