@@ -2,18 +2,18 @@ rem ========== PreStart ==========
 @echo off
 
 rem Set version info
-set V=1.3.9
+set V=1.4.0
 
 rem ========== Start ==========
 
 cls
-echo ###############################################################################
-echo #                                                                             #
-echo #  ETHminerBuildScriptDmW Version %V%                                       #
-echo #                                                                             #
-echo #  AUTHOR: DeadManWalking  (DeadManWalkingTO-GitHub)                          #
-echo #                                                                             #
-echo ###############################################################################
+echo '###############################################################################'
+echo.
+echo "  ETHminerBuildScriptDmW Version '$V'"
+echo.
+echo "  AUTHOR: DeadManWalking  (DeadManWalkingTO-GitHub)"
+echo.
+echo '###############################################################################'
 echo.
 echo ETHminerBuildScriptDmW
 echo 1. Auto Remove old Ethminer's Directory
