@@ -31,13 +31,14 @@ Available versions
 - [Donations](#donations)
 
 ## Features
-1. Auto Clone (Download) latest Master of Ethminer
-2. Auto Configure Ethminer
-3. Auto Build Ethminer
-4. Display Control Messages
-5. Auto Remove previous compile folders 
-6. Auto install build tools (MinGW)
-7. Auto build latest OpenSSL (MinGW) (Fix #817 issue OpenSSL build error with hunter.)
+- Auto Clone (Download) latest Master of Ethminer
+- Auto Configure Ethminer
+- Auto Build Ethminer
+- Display Control Messages
+- Auto Remove previous compile folders 
+- MinGW Extras
+  - Auto Install build tools (MinGW)
+  - Auto Build latest OpenSSL (MinGW) (Fix #817 issue OpenSSL build error with hunter.)
 
 
 ## Download
