@@ -2,17 +2,17 @@
 #========== PreStart ==========
 
 #Set version info
-V=1.2.7
+V=1.2.8
 
 #========== Start ==========
 
 clear
 echo '###############################################################################'
-echo '#                                                                             #'
-echo '#  ETHminerBuildScriptDmW Version '$V'                                       #'
-echo '#                                                                             #'
-echo '#  AUTHOR: DeadManWalking  (DeadManWalkingTO-GitHub)                          #'
-echo '#                                                                             #'
+echo #
+echo "  ETHminerBuildScriptDmW Version '$V'"
+echo #
+echo "  AUTHOR: DeadManWalking  (DeadManWalkingTO-GitHub)"
+echo #
 echo '###############################################################################'
 echo #
 echo 'ETHminerBuildScriptDmW'
