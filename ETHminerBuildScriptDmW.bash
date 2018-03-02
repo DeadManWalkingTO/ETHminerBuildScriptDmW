@@ -2,7 +2,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=1.2.9
+V=1.3.0
 
 #========== Start ==========
 
@@ -21,7 +21,7 @@ echo "2. Auto Clone (Download) latest Master of Ethminer"
 echo "3. Auto Configure Ethminer"
 echo "4. Auto Build Ethminer"
 echo #
-read -n1 -r -p "Press any key to continue..." key
+read -n1 -r -p "Press any key to continue... " key
 echo #
 echo #
 
@@ -140,7 +140,7 @@ echo #
 
 #========== End ==========
 
-read -n1 -r -p "Press any key to continue..." key
+read -n1 -r -p "Press any key to continue... " key
 echo #
 exit 0
 
