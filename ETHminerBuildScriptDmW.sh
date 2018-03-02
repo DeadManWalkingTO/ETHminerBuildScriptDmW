@@ -1,7 +1,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=2.1.1
+V=2.1.2
 
 #========== Start ==========
 
@@ -31,7 +31,9 @@ echo #
 #Change Directory to Home
 echo "=================================================="
 echo "Change Directory to Home"
+echo #
 cd ~/
+echo #
 echo "Done"
 echo "=================================================="
 echo #
@@ -44,15 +46,25 @@ read -p "Install Build Tools? (For Yes type Y or y. Anything else for No.) " -n 
 echo # 
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
+echo #
 pacman -S git
+echo #
 pacman -S cmake
+echo #
 pacman -S subversion
+echo #
 pacman -S make
+echo #
 pacman -S make git subversion cmake
+echo #
 pacman -S mingw-w64-x86_64-gcc 
+echo #
 pacman -S mingw-w64-x86_64-cmake 
+echo #
 pacman -S mingw-w64-x86_64-pkg-config
+echo #
 pacman -S base-devel
+echo #
 fi
 echo "Done"
 echo "=================================================="
@@ -70,49 +82,63 @@ then
 echo #
 echo "--------------------------------------------------"
 echo "Remove OpenSSL Directory"
+echo #
 rm -rf openssl
+echo #
 echo "Done"
 echo "--------------------------------------------------"
 echo #
 sleep 1
 echo "--------------------------------------------------"
 echo "Clone OpenSSL"
+echo #
 git clone git://github.com/openssl/openssl.git
+echo #
 echo "Done"
 echo "--------------------------------------------------"
 echo #
 sleep 1
 echo "--------------------------------------------------"
 echo "Change Directory to OpenSSL"
+echo #
 cd openssl
+echo #
 echo "Done"
 echo "--------------------------------------------------"
 echo #
 sleep 1
 echo "--------------------------------------------------"
 echo "Config"
+echo #
 ./config
+echo #
 echo "Done"
 echo "--------------------------------------------------"
 echo #
 sleep 1
 echo "--------------------------------------------------"
 echo "Make"
+echo #
 make
+echo #
 echo "Done"
 echo "--------------------------------------------------"
 echo #
 sleep 1
 echo "--------------------------------------------------"
 echo "Make Test"
+echo #
 make test
+echo #
 echo "Done"
 echo "--------------------------------------------------"
 echo #
 sleep 1
 echo "--------------------------------------------------"
 echo "Make Install"
+echo #
 make install
+echo #
 echo "Done"
 echo "--------------------------------------------------"
 echo #
@@ -126,7 +152,9 @@ sleep 1
 #Change Directory to Home
 echo "=================================================="
 echo "Change Directory to Home"
+echo #
 cd ~/
+echo #
 echo "Done"
 echo "=================================================="
 echo #
@@ -137,7 +165,9 @@ sleep 1
 #Remove old Ethminer's Directory
 echo "=================================================="
 echo "Remove old Ethminer's Directory"
+echo #
 rm -rf ethminer
+echo #
 echo "Done"
 echo "=================================================="
 echo #
@@ -146,7 +176,9 @@ sleep 1
 #Download Ethminer
 echo "=================================================="
 echo "Download Ethminer"
+echo #
 git clone https://github.com/ethereum-mining/ethminer.git
+echo #
 echo "Done"
 echo "=================================================="
 echo #
@@ -155,7 +187,9 @@ sleep 1
 #Change Directory to Ethminer's
 echo "=================================================="
 echo "Change Directory to Ethminer's"
+echo #
 cd ethminer/
+echo #
 echo "Done"
 echo "=================================================="
 echo #
@@ -164,7 +198,9 @@ sleep 1
 #Git Submodules
 echo "=================================================="
 echo "Git Submodules"
+echo #
 git submodule update --init --recursive
+echo #
 echo "Done"
 echo "=================================================="
 echo #
@@ -173,7 +209,9 @@ sleep 1
 #Make Build Directory
 echo "=================================================="
 echo "Make Build Directory"
+echo #
 mkdir build
+echo #
 echo "Done"
 echo "=================================================="
 echo #
@@ -182,8 +220,10 @@ sleep 1
 #Change Directory to Build
 echo "=================================================="
 echo "Change Directory to Build"
+echo #
 cd build/
 echo "Done"
+echo #
 echo "=================================================="
 echo #
 sleep 1
@@ -195,7 +235,9 @@ echo "CUDA build ON -- DETHASHCUDA=ON"
 echo "OpenCL build ON -- DETHASHCL=ON"
 echo "Stratum build ON -- DETHSTRATUM=ON"
 echo "API build ON -- DAPICORE=ON"
+echo #
 cmake .. -G "Visual Studio 14 2015 Win64" -T v140,host=x64 -DETHASHCUDA=ON -DETHASHCL=OFF -DETHSTRATUM=ON -DAPICORE=OFF
+echo #
 echo "Done"
 echo "=================================================="
 echo #
@@ -204,7 +246,9 @@ sleep 1
 #Build Ethminer
 echo "=================================================="
 echo "Build Ethminer"
+echo #
 cmake --build . --config Release
+echo #
 echo "Done"
 echo "=================================================="
 echo #
@@ -213,7 +257,9 @@ sleep 1
 #Copy ethminer.exe to Home Directory
 echo "=================================================="
 echo "Copy ethminer.exe to Home Directory"
+echo #
 cp ./ethminer/Release/*.exe ~/
+echo #
 echo "Done"
 echo "=================================================="
 echo #
@@ -222,7 +268,9 @@ sleep 1
 #Change Directory to Home
 echo "=================================================="
 echo "Change Directory to Home"
+echo #
 cd ~/
+echo #
 echo "Done"
 echo "=================================================="
 echo #
