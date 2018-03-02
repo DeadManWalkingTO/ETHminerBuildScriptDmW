@@ -1,7 +1,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=2.1.2
+V=2.1.3
 
 #========== Start ==========
 
@@ -103,6 +103,16 @@ echo "Change Directory to OpenSSL"
 echo #
 cd openssl
 echo #
+echo "Done"
+echo "--------------------------------------------------"
+echo #
+sleep 1
+# "Ensure that line endings are set correctly"
+echo "--------------------------------------------------"
+echo "Ensure that line endings are set correctly"
+git config core.autocrlf false
+git config core.eol lf
+git checkout .
 echo "Done"
 echo "--------------------------------------------------"
 echo #
