@@ -1,7 +1,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=2.0.9
+V=2.1.1
 
 #========== Start ==========
 
@@ -22,7 +22,7 @@ echo "4. Auto Clone (Download) latest Master of Ethminer"
 echo "5. Auto Configure Ethminer"
 echo "6. Auto Build Ethminer"
 echo #
-read -n1 -r -p "Press any key to continue..." key
+read -n1 -r -p "Press any key to continue... " key
 echo #
 echo #
 
@@ -40,7 +40,7 @@ sleep 1
 #Install Build Tools
 echo "=================================================="
 echo "Install Build Tools (Install them if you have not installed them before.)"
-read -p "Install Build Tools? (For Yes type Y or y. Anything else for No.)" -n 1 -r
+read -p "Install Build Tools? (For Yes type Y or y. Anything else for No.) " -n 1 -r
 echo # 
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
@@ -63,7 +63,7 @@ sleep 1
 #Build OpenSSL
 echo "=================================================="
 echo "Build OpenSSL (Build to fix the Ethminer's issue #817 - If you get OpenSSL build error with hunter.)"
-read -p "Build latest master OpenSSL? (For Yes type Y or y. Anything else for No.)" -n 1 -r
+read -p "Build latest master OpenSSL? (For Yes type Y or y. Anything else for No.) " -n 1 -r
 echo #
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
@@ -161,6 +161,15 @@ echo "=================================================="
 echo #
 sleep 1
 
+#Git Submodules
+echo "=================================================="
+echo "Git Submodules"
+git submodule update --init --recursive
+echo "Done"
+echo "=================================================="
+echo #
+sleep 1
+
 #Make Build Directory
 echo "=================================================="
 echo "Make Build Directory"
@@ -226,7 +235,7 @@ echo "=================================================="
 
 #========== End ==========
 
-read -n1 -r -p "Press any key to continue..." key
+read -n1 -r -p "Press any key to continue... " key
 echo #
 
 #========== EoF ==========
