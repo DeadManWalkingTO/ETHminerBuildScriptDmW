@@ -1,7 +1,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=2.1.3
+V=2.1.4
 
 #========== Start ==========
 
@@ -113,6 +113,14 @@ echo "Ensure that line endings are set correctly"
 git config core.autocrlf false
 git config core.eol lf
 git checkout .
+echo "Done"
+echo "--------------------------------------------------"
+echo #
+sleep 1
+# "Checkout the latest tag"
+echo "--------------------------------------------------"
+echo "Checkout the latest tag"
+git checkout $(git describe --tags $(git rev-list --tags --max-count=1))
 echo "Done"
 echo "--------------------------------------------------"
 echo #
