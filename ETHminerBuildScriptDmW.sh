@@ -1,7 +1,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=2.1.5
+V=2.1.6
 
 #========== Start ==========
 
@@ -129,6 +129,15 @@ echo "--------------------------------------------------"
 echo "Config"
 echo #
 ./config --prefix=$PWD/dist no-idea no-mdc2 no-rc5 shared mingw64
+echo #
+echo "Done"
+echo "--------------------------------------------------"
+echo #
+sleep 1
+echo "--------------------------------------------------"
+echo "Make Depend"
+echo #
+make depend
 echo #
 echo "Done"
 echo "--------------------------------------------------"
