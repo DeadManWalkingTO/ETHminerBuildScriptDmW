@@ -2,7 +2,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=1.2.8
+V=1.2.9
 
 #========== Start ==========
 
@@ -60,6 +60,15 @@ sleep 1
 echo "=================================================="
 echo "Change Directory to Ethminer's"
 cd ethminer
+echo "Done"
+echo "=================================================="
+echo #
+sleep 1
+
+#Git Submodules
+echo "=================================================="
+echo "Git Submodules"
+git submodule update --init --recursive
 echo "Done"
 echo "=================================================="
 echo #
