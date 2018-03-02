@@ -2,7 +2,7 @@ rem ========== PreStart ==========
 @echo off
 
 rem Set version info
-set V=1.4.0
+set V=1.4.1
 
 rem ========== Start ==========
 
@@ -71,6 +71,15 @@ rem Change Directory to Ethminer's
 echo ==================================================
 echo Change Directory to Ethminer's
 cd ethminer
+echo Done
+echo ==================================================
+echo.
+timeout 1 > nul
+
+rem Git Submodule
+echo ==================================================
+echo Git Submodule
+git submodule update --init --recursive
 echo Done
 echo ==================================================
 echo.
