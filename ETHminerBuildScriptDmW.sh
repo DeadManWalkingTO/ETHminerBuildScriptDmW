@@ -1,7 +1,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=2.1.4
+V=2.1.5
 
 #========== Start ==========
 
@@ -128,7 +128,7 @@ sleep 1
 echo "--------------------------------------------------"
 echo "Config"
 echo #
-./config
+./config --prefix=$PWD/dist no-idea no-mdc2 no-rc5 shared mingw64
 echo #
 echo "Done"
 echo "--------------------------------------------------"
