@@ -2,7 +2,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=1.3.6
+V=1.3.7
 
 #========== Start ==========
 
@@ -32,8 +32,7 @@ echo "=================================================="
 echo "Change Directory to Home"
 echo #
 cd ~
-echo #
-echo "Done"
+if [ $? -eq 0 ]; then echo; echo "Done"; else echo "Fail"; exit; fi
 echo "=================================================="
 echo #
 sleep 1s
@@ -177,6 +176,8 @@ echo "=================================================="
 echo "ETHminerBuildScriptDmW was completed"
 echo "=================================================="
 echo #
+
+#========== Error Handling ==========
 
 #========== End ==========
 
