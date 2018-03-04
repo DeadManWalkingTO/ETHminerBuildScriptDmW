@@ -37,7 +37,7 @@ Available versions
 - Display Control Messages
 - Auto Remove previous compile folders 
 - MinGW Extras
-  - Auto Install build tools (MinGW)
+  - Auto Install required packages (MinGW)
   - Auto Build latest OpenSSL (MinGW) (Fix #817 issue OpenSSL build error with hunter.)
 
 
