@@ -2,7 +2,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=1.3.4
+V=1.3.5
 
 #========== Start ==========
 
@@ -77,6 +77,15 @@ sleep 1s
 echo "=================================================="
 echo "Git Fetch"
 git fetch -q origin
+echo "Done"
+echo "=================================================="
+echo #
+sleep 1
+
+#Git Checkout
+echo "=================================================="
+echo "Git Checkout"
+git checkout -qf FETCH_HEAD
 echo "Done"
 echo "=================================================="
 echo #
