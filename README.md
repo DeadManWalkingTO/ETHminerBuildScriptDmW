@@ -38,6 +38,7 @@ Available versions
 - Auto Remove previous compile folders 
 - MinGW Extras
   - Auto Install required packages (MinGW)
+  - AutoFix [#817](https://github.com/ethereum-mining/ethminer/issues/817) issue of Ethminer.
 
 ## Download
 Download [Last release here.](../../releases/latest)
@@ -66,14 +67,7 @@ Dependencies to build ETHminer are required
   * [OpenGL](https://www.khronos.org/opengl/wiki/Getting_Started)
   * [NVidia CUDA](https://developer.nvidia.com/cuda-downloads)
 * MinGW Build (ETHminerBuildScriptDmW.sh)
-  * git
-  * cmake
-  * subversion
-  * make
-  * mingw-w64-x86_64-gcc 
-  * mingw-w64-x86_64-cmake 
-  * mingw-w64-x86_64-pkg-config
-  * base-devel
+  * Auto Install required packages (MinGW)
   * Build Tools (one of the following)
     * [Microsoft Build Tools 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48159)
     * [Microsoft Visual Studio 2015](https://www.visualstudio.com/vs/older-downloads/)
