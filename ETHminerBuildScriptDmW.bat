@@ -2,7 +2,7 @@ rem ========== PreStart ==========
 @echo off
 
 rem Set version info
-set V=1.5.8
+set V=1.5.9
 
 rem ========== Start ==========
 
@@ -27,6 +27,7 @@ echo.
 
 rem ========== Initializing ==========
 
+chcp 65001
 setlocal
 
 rem Call Microsoft Visual C++ Build Tools
