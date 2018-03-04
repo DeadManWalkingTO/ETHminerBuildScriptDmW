@@ -1,7 +1,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=2.3.1
+V=2.3.2
 
 #========== Start ==========
 
@@ -98,8 +98,7 @@ echo "=================================================="
 echo "Remove old Ethminer's Directory"
 echo #
 rm -rf ethminer
-echo #
-echo "Done"
+if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
 sleep 1s
