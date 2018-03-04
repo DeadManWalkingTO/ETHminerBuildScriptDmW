@@ -61,9 +61,27 @@ Dependencies to build ETHminer are required
     * [Microsoft Build Tools 2017](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017)
     * [Microsoft Visual Studio 2017](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017)
 * Linux Build (ETHminerBuildScriptDmW.bash)
+  * Git
+  * Python
+  * Perl
+  * Cmake
+  * [OpenGL](https://www.khronos.org/opengl/wiki/Getting_Started)
+  * [NVidia CUDA](https://developer.nvidia.com/cuda-downloads)
 * MinGW Build (ETHminerBuildScriptDmW.sh)
-
-
+  * git
+  * cmake
+  * subversion
+  * make
+  * mingw-w64-x86_64-gcc 
+  * mingw-w64-x86_64-cmake 
+  * mingw-w64-x86_64-pkg-config
+  * base-devel
+  * Build Tools (one of the following)
+    * [Microsoft Build Tools 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48159)
+    * [Microsoft Visual Studio 2015](https://www.visualstudio.com/vs/older-downloads/)
+    * [Microsoft Build Tools 2017](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017)
+    * [Microsoft Visual Studio 2017](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017)
+  
 ## Usage
 * Download or Clone
 * Unzip
