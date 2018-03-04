@@ -1,7 +1,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=2.2.7
+V=2.2.8
 
 #========== Start ==========
 
@@ -35,7 +35,7 @@ cd ~/
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Install Required Packages
 echo "=================================================="
@@ -65,7 +65,7 @@ fi
 echo "Done"
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Change Directory to Home
 echo "=================================================="
@@ -75,7 +75,7 @@ cd ~/
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #========== Run ==========
 
@@ -88,7 +88,7 @@ echo #
 echo "Done"
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Download Ethminer
 echo "=================================================="
@@ -98,7 +98,7 @@ git clone --depth=1 --branch=master https://github.com/ethereum-mining/ethminer.
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Change Directory to Ethminer's
 echo "=================================================="
@@ -108,7 +108,7 @@ cd ethminer/
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Git Fetch
 echo "=================================================="
@@ -117,7 +117,7 @@ git fetch -q origin
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Git Checkout
 echo "=================================================="
@@ -126,7 +126,7 @@ git checkout -qf FETCH_HEAD
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Git Submodules
 echo "=================================================="
@@ -136,7 +136,7 @@ git submodule update --init --recursive
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Make Build Directory
 echo "=================================================="
@@ -146,7 +146,7 @@ mkdir build
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Change Directory to Build
 echo "=================================================="
@@ -156,7 +156,7 @@ cd build/
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Configure Ethminer
 echo "=================================================="
@@ -170,7 +170,7 @@ cmake .. -G "Visual Studio 14 2015 Win64" -T v140,host=x64 -DETHASHCUDA=ON -DETH
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Build Ethminer
 echo "=================================================="
@@ -180,7 +180,7 @@ cmake --build . --config Release
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Copy ethminer.exe to Home Directory
 echo "=================================================="
@@ -190,7 +190,7 @@ cp ./ethminer/Release/*.exe ~/
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Change Directory to Home
 echo "=================================================="
@@ -200,7 +200,7 @@ cd ~/
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #ETHminerBuildScriptDmW was completed
 echo "=================================================="
