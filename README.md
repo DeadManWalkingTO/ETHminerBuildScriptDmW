@@ -13,7 +13,8 @@
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-ETHminerBuildScriptDmW.svg)](./README.md)
 > ETHminer Build Script by DeadManWalking (DeadManWalkingTO-GitHub) 
 
-ETHminerBuildScriptDmW an Auto (Download / Configure / Build) Script for Ethminer.
+ETHminerBuildScriptDmW an Auto (Download / Configure / Build) Script for [ETHminer](https://github.com/ethereum-mining/ethminer).
+
 Available versions
 * Windows version (ETHminerBuildScriptDmW.bat)
 * Linux version (ETHminerBuildScriptDmW.bash)
