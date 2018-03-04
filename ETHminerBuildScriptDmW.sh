@@ -1,7 +1,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=2.2.8
+V=2.3.1
 
 #========== Start ==========
 
@@ -39,8 +39,8 @@ sleep 1s
 
 #Install Required Packages
 echo "=================================================="
-echo "Install Required Packages (Install them if you have not installed them before.)"
-read -p "Install Required Packages? (For Yes type Y or y. Anything else for No.) " -n 1 -r
+echo "Install Required Packages"
+read -p "Continue? (For Yes type Y or y. Anything else for No.) " -n 1 -r
 echo # 
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
@@ -63,6 +63,20 @@ pacman -S base-devel
 echo #
 fi
 echo "Done"
+echo "=================================================="
+echo #
+sleep 1s
+
+#Fix Git Dashless Error
+echo "=================================================="
+echo "Change Directory to Home"
+echo #
+echo "1/2"
+echo '#!/bin/sh' > /mingw64/bin/git
+if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
+echo "2/2"
+echo 'PATH=/bin git "$@"' >> /mingw64/bin/git
+if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
 sleep 1s
