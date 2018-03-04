@@ -39,7 +39,7 @@ Available versions
 - Auto Remove previous compile folders 
 - MinGW Extras
   - Auto Install required packages (MinGW)
-  - AutoFix [#817](https://github.com/ethereum-mining/ethminer/issues/817) issue of Ethminer.
+  - AutoFix "Git Dashless Error" [#817](https://github.com/ethereum-mining/ethminer/issues/817) issue of Ethminer.
 
 ## Download
 Download [Last release here.](../../releases/latest)
@@ -74,7 +74,7 @@ Dependencies to build ETHminer are required
     * [Microsoft Visual Studio 2015](https://www.visualstudio.com/vs/older-downloads/)
     * [Microsoft Build Tools 2017](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017)
     * [Microsoft Visual Studio 2017](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017)
-* Download [Windows/MinGW Hunter Fix (Fix Compile Hunter Errors)](https://mega.nz/#F!GAF20C5Q!-c20bK3NElhaaPgdExhh-A)
+* Download [Windows/MinGW Hunter Fix (Fix Compile Hunter Errors)](https://mega.nz/#F!GAF20C5Q!-c20bK3NElhaaPgdExhh-A) ([#817](https://github.com/ethereum-mining/ethminer/issues/817) issue of Ethminer)
 
 ## Usage
 * Download or Clone
