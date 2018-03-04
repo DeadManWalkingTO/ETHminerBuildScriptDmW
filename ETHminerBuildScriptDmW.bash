@@ -2,7 +2,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=1.3.1
+V=1.3.2
 
 #========== Start ==========
 
@@ -36,7 +36,7 @@ echo #
 echo "Done"
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #========== Run ==========
 
@@ -49,7 +49,7 @@ echo #
 echo "Done"
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Download Ethminer
 echo "=================================================="
@@ -60,7 +60,7 @@ echo #
 echo "Done"
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Change Directory to Ethminer's
 echo "=================================================="
@@ -71,7 +71,7 @@ echo #
 echo "Done"
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Git Submodules
 echo "=================================================="
@@ -82,7 +82,7 @@ echo #
 echo "Done"
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Make Build Directory
 echo "=================================================="
@@ -93,7 +93,7 @@ echo #
 echo "Done"
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Change Directory to Build
 echo "=================================================="
@@ -104,7 +104,7 @@ echo #
 echo "Done"
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Configure Ethminer
 echo "=================================================="
@@ -119,7 +119,7 @@ echo #
 echo "Done"
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Build Ethminer
 echo "=================================================="
@@ -130,7 +130,7 @@ echo #
 echo "Done"
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Copy ethminer to Home Directory
 echo "=================================================="
@@ -141,7 +141,7 @@ echo #
 echo "Done"
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #Change Directory to Home
 echo "=================================================="
@@ -152,7 +152,7 @@ echo #
 echo "Done"
 echo "=================================================="
 echo #
-sleep 1
+sleep 1s
 
 #ETHminerBuildScriptDmW was completed
 echo "=================================================="
