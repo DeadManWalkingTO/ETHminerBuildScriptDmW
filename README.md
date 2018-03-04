@@ -47,6 +47,23 @@ Download [Last release here.](../../releases/latest)
 ## Install
 Script (No installation required)
 
+Dependencies to build ETHminer are required
+* Windows Build (ETHminerBuildScriptDmW.bat)
+  * [Git](https://github.com/git-for-windows/git/releases/download/v2.16.2.windows.1/Git-2.16.2-64-bit.exe)
+  * [Python](https://www.python.org/ftp/python/3.6.4/python-3.6.4-amd64.exe)
+  * [ActivePerl](http://downloads.activestate.com/ActivePerl/releases/5.24.3.2404/ActivePerl-5.24.3.2404-MSWin32-x64-404865.exe)
+  * [Cmake](https://cmake.org/files/v3.11/cmake-3.11.0-rc2-win64-x64.msi)
+  * [OpenGL](https://www.khronos.org/opengl/wiki/Getting_Started)
+  * [NVidia CUDA](https://developer.nvidia.com/cuda-downloads)
+  * Build Tools (one of the following)
+    * [Microsoft Build Tools 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48159)
+    * [Microsoft Visual Studio 2015](https://www.visualstudio.com/vs/older-downloads/)
+    * [Microsoft Build Tools 2017](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017)
+    * [Microsoft Visual Studio 2017](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017)
+* Linux Build (ETHminerBuildScriptDmW.bash)
+* MinGW Build (ETHminerBuildScriptDmW.sh)
+
+
 ## Usage
 * Download or Clone
 * Unzip
