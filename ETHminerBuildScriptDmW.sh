@@ -1,7 +1,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=2.2.2
+V=2.2.7
 
 #========== Start ==========
 
@@ -15,7 +15,7 @@ echo #
 echo '###############################################################################'
 echo #
 echo 'ETHminerBuildScriptDmW'
-echo "1. Install Build Tools (MinGW64)"
+echo "1. Auto Install required packages (MinGW)"
 echo "2. Auto Remove old Ethminer's Directory"
 echo "3. Auto Clone (Download) latest Master of Ethminer"
 echo "4. Auto Configure Ethminer"
@@ -37,10 +37,10 @@ echo "=================================================="
 echo #
 sleep 1
 
-#Install Build Tools
+#Install Required Packages
 echo "=================================================="
-echo "Install Build Tools (Install them if you have not installed them before.)"
-read -p "Install Build Tools? (For Yes type Y or y. Anything else for No.) " -n 1 -r
+echo "Install Required Packages (Install them if you have not installed them before.)"
+read -p "Install Required Packages? (For Yes type Y or y. Anything else for No.) " -n 1 -r
 echo # 
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
@@ -94,7 +94,7 @@ sleep 1
 echo "=================================================="
 echo "Download Ethminer"
 echo #
-git clone https://github.com/ethereum-mining/ethminer.git
+git clone --depth=1 --branch=master https://github.com/ethereum-mining/ethminer.git
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
@@ -105,6 +105,24 @@ echo "=================================================="
 echo "Change Directory to Ethminer's"
 echo #
 cd ethminer/
+if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
+echo "=================================================="
+echo #
+sleep 1
+
+#Git Fetch
+echo "=================================================="
+echo "Git Fetch"
+git fetch -q origin
+if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
+echo "=================================================="
+echo #
+sleep 1
+
+#Git Checkout
+echo "=================================================="
+echo "Git Checkout"
+git checkout -qf FETCH_HEAD
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
@@ -143,10 +161,10 @@ sleep 1
 #Configure Ethminer
 echo "=================================================="
 echo "Configure Ethminer"
-echo "CUDA build ON -- DETHASHCUDA=ON"
-echo "OpenCL build ON -- DETHASHCL=ON"
-echo "Stratum build ON -- DETHSTRATUM=ON"
-echo "API build ON -- DAPICORE=ON"
+echo "CUDA build -- DETHASHCUDA=ON"
+echo "OpenCL build -- DETHASHCL=ON"
+echo "Stratum build -- DETHSTRATUM=ON"
+echo "API build -- DAPICORE=ON"
 echo #
 cmake .. -G "Visual Studio 14 2015 Win64" -T v140,host=x64 -DETHASHCUDA=ON -DETHASHCL=OFF -DETHSTRATUM=ON -DAPICORE=OFF
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
