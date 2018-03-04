@@ -1,7 +1,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=2.3.2
+V=2.3.3
 
 #========== Start ==========
 
@@ -179,7 +179,7 @@ echo "OpenCL build -- DETHASHCL=ON"
 echo "Stratum build -- DETHSTRATUM=ON"
 echo "API build -- DAPICORE=ON"
 echo #
-cmake .. -G "Visual Studio 14 2015 Win64" -T v140,host=x64 -DETHASHCUDA=ON -DETHASHCL=OFF -DETHSTRATUM=ON -DAPICORE=OFF
+cmake .. -G "Visual Studio 14 2015 Win64" -T v140,host=x64 -DETHASHCUDA=ON -DETHASHCL=ON -DETHSTRATUM=ON -DAPICORE=ON
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
