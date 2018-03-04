@@ -2,7 +2,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=1.3.7
+V=1.4.2
 
 #========== Start ==========
 
@@ -32,7 +32,7 @@ echo "=================================================="
 echo "Change Directory to Home"
 echo #
 cd ~
-if [ $? -eq 0 ]; then echo; echo "Done"; else echo "Fail"; exit; fi
+if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
 sleep 1s
@@ -44,8 +44,7 @@ echo "=================================================="
 echo "Remove old Ethminer's Directory"
 echo #
 rm -rf ethminer
-echo #
-echo "Done"
+if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
 sleep 1s
@@ -55,8 +54,7 @@ echo "=================================================="
 echo "Download Ethminer"
 echo #
 git clone --depth=1 --branch=master https://github.com/ethereum-mining/ethminer.git
-echo #
-echo "Done"
+if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
 sleep 1s
@@ -66,8 +64,7 @@ echo "=================================================="
 echo "Change Directory to Ethminer's"
 echo #
 cd ethminer
-echo #
-echo "Done"
+if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
 sleep 1s
@@ -76,7 +73,7 @@ sleep 1s
 echo "=================================================="
 echo "Git Fetch"
 git fetch -q origin
-echo "Done"
+if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
 sleep 1
@@ -85,7 +82,7 @@ sleep 1
 echo "=================================================="
 echo "Git Checkout"
 git checkout -qf FETCH_HEAD
-echo "Done"
+if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
 sleep 1
@@ -95,8 +92,7 @@ echo "=================================================="
 echo "Git Submodules"
 echo #
 git submodule update --init --recursive
-echo #
-echo "Done"
+if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
 sleep 1s
@@ -106,8 +102,7 @@ echo "=================================================="
 echo "Make Build Directory"
 echo #
 mkdir build
-echo #
-echo "Done"
+if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
 sleep 1s
@@ -117,8 +112,7 @@ echo "=================================================="
 echo "Change Directory to Build"
 echo #
 cd build
-echo #
-echo "Done"
+if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
 sleep 1s
@@ -132,8 +126,7 @@ echo "Stratum build -- DETHSTRATUM=ON"
 echo "API build -- DAPICORE=ON"
 echo #
 cmake .. -DETHASHCUDA=ON -DETHASHCL=ON -DETHSTRATUM=ON -DAPICORE=ON
-echo #
-echo "Done"
+if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
 sleep 1s
@@ -143,8 +136,7 @@ echo "=================================================="
 echo "Build Ethminer"
 echo #
 cmake --build .
-echo #
-echo "Done"
+if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
 sleep 1s
@@ -154,8 +146,7 @@ echo "=================================================="
 echo "Copy ethminer to Home Directory"
 echo #
 cp ./ethminer/Release/ethminer ~
-echo #
-echo "Done"
+if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
 sleep 1s
@@ -165,8 +156,7 @@ echo "=================================================="
 echo "Change Directory to Home"
 echo #
 cd ~
-echo #
-echo "Done"
+if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
 sleep 1s
