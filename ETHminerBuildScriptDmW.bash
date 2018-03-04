@@ -2,7 +2,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=1.3.2
+V=1.3.3
 
 #========== Start ==========
 
@@ -55,7 +55,7 @@ sleep 1s
 echo "=================================================="
 echo "Download Ethminer"
 echo #
-git clone https://github.com/ethereum-mining/ethminer.git
+git clone --depth=1 --branch=master https://github.com/ethereum-mining/ethminer.git
 echo #
 echo "Done"
 echo "=================================================="
