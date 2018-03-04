@@ -2,7 +2,7 @@ rem ========== PreStart ==========
 @echo off
 
 rem Set version info
-set V=1.5.9
+set V=1.6.0
 
 rem ========== Start ==========
 
@@ -27,7 +27,6 @@ echo.
 
 rem ========== Initializing ==========
 
-chcp 65001
 setlocal
 
 rem Call Microsoft Visual C++ Build Tools
@@ -141,10 +140,10 @@ timeout 1 > nul
 rem Configure Ethminer
 echo ==================================================
 echo Configure Ethminer
-echo CUDA build ON -- DETHASHCUDA=ON
-echo OpenCL build ON -- DETHASHCL=ON
-echo Stratum build ON -- DETHSTRATUM=ON
-echo API build ON -- DAPICORE=ON
+echo CUDA build -- DETHASHCUDA=ON
+echo OpenCL build -- DETHASHCL=ON
+echo Stratum build -- DETHSTRATUM=ON
+echo API build -- DAPICORE=ON
 echo.
 cmake .. -G "Visual Studio 14 2015 Win64" -T v140,host=x64 -DETHASHCL=ON -DETHASHCUDA=ON -DETHSTRATUM=ON -DAPICORE=ON
 if %ERRORLEVEL%==0 (echo. & echo Done) else (echo. & echo Fail & pause & goto :eof) 
