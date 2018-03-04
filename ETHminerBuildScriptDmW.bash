@@ -2,7 +2,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=1.3.5
+V=1.3.6
 
 #========== Start ==========
 
@@ -127,12 +127,12 @@ sleep 1s
 #Configure Ethminer
 echo "=================================================="
 echo "Configure Ethminer"
-echo "CUDA build ON -- DETHASHCUDA=ON"
-echo "OpenCL build ON -- DETHASHCL=ON"
-echo "Stratum build ON -- DETHSTRATUM=ON"
-echo "API build ON -- DAPICORE=ON"
+echo "CUDA build -- DETHASHCUDA=ON"
+echo "OpenCL build -- DETHASHCL=ON"
+echo "Stratum build -- DETHSTRATUM=ON"
+echo "API build -- DAPICORE=ON"
 echo #
-cmake .. -DETHASHCUDA=ON -DETHASHCL=OFF -DETHSTRATUM=ON -DAPICORE=OFF
+cmake .. -DETHASHCUDA=ON -DETHASHCL=ON -DETHSTRATUM=ON -DAPICORE=ON
 echo #
 echo "Done"
 echo "=================================================="
