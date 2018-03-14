@@ -65,6 +65,11 @@ Dependencies to build ETHminer are required
   * Python
   * Perl
   * Cmake
+  * Libraries
+    * libleveldb-dev
+    * libcurl4-openssl-dev
+    * libmicrohttpd-dev
+    * libudev-dev
   * [OpenGL](https://www.khronos.org/opengl/wiki/Getting_Started)
   * [NVidia CUDA](https://developer.nvidia.com/cuda-downloads)
 * MinGW Build (ETHminerBuildScriptDmW.sh)
