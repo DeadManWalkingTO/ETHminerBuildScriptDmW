@@ -79,7 +79,7 @@ Dependencies to build ETHminer are required
     * [Microsoft Visual Studio 2015](https://www.visualstudio.com/vs/older-downloads/)
     * [Microsoft Build Tools 2017](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017)
     * [Microsoft Visual Studio 2017](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017)
-* Download [Windows/MinGW Hunter Fix (Fix Compile Hunter Errors)](https://mega.nz/#F!GAF20C5Q!-c20bK3NElhaaPgdExhh-A) ([#817](https://github.com/ethereum-mining/ethminer/issues/817) issue of Ethminer)
+* Download [Hunter-Fix-v2 (Fix Windows and MinGW Compile Hunter Errors)](https://mega.nz/#F!GAF20C5Q!-c20bK3NElhaaPgdExhh-A) ([#817](https://github.com/ethereum-mining/ethminer/issues/817) [#1011](https://github.com/ethereum-mining/ethminer/issues/1011) issues of Ethminer)
 
 ## Usage
 * Download or Clone
