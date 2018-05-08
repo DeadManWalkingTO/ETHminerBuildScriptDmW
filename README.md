@@ -16,6 +16,7 @@
 [![DMCA Protection](https://img.shields.io/badge/DMCA-Protected-brightgreen.svg)](https://www.dmca.com/Takedowns.aspx?r=m)
 [![GitHub license](https://img.shields.io/github/license/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](./LICENSE)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-ETHminerBuildScriptDmW.svg)](./README.md)
+
 > [ETHminer](https://github.com/ethereum-mining/ethminer) Build Script by [DeadManWalking (DeadManWalkingTO-GitHub)](https://github.com/DeadManWalkingTO)
 
 ETHminerBuildScriptDmW an Auto (Download / Configure / Build) Script for [ETHminer](https://github.com/ethereum-mining/ethminer).
