@@ -11,6 +11,8 @@
 [![GitHub stars](https://img.shields.io/github/stars/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../network)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-ETHminerBuildScriptDmW.svg)](./README.md)
+
+[![DMCA Protection](https://images.dmca.com/Badges/dmca_protected_sml_120d.png)](./LICENSE)
 > [ETHminer](https://github.com/ethereum-mining/ethminer) Build Script by [DeadManWalking (DeadManWalkingTO-GitHub)](https://github.com/DeadManWalkingTO)
 
 ETHminerBuildScriptDmW an Auto (Download / Configure / Build) Script for [ETHminer](https://github.com/ethereum-mining/ethminer).
