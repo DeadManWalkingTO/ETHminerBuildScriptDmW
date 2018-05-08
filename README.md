@@ -3,6 +3,7 @@
 [![GitHub release](https://img.shields.io/github/release/DeadManWalkingTO/ETHminerBuildScriptDmW/all.svg)](../../releases/latest)
 [![GitHub Release Date](https://img.shields.io/github/release-date-pre/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../releases/latest)
 [![GitHub top language](https://img.shields.io/github/languages/top/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../)
+[![GitHub language count](https://img.shields.io/github/languages/count/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../)
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../)
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../)
