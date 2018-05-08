@@ -4,15 +4,17 @@
 [![GitHub Release Date](https://img.shields.io/github/release-date-pre/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../releases/latest)
 [![GitHub top language](https://img.shields.io/github/languages/top/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../)
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../)
-[![GitHub license](https://img.shields.io/github/license/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](./LICENSE)
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../)
 [![Github commits (since latest release)](https://img.shields.io/github/commits-since/DeadManWalkingTO/ETHminerBuildScriptDmW/latest.svg)](../../)
 [![GitHub stars](https://img.shields.io/github/stars/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../network)
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-ETHminerBuildScriptDmW.svg)](./README.md)
+[![GitHub issues](https://img.shields.io/github/issues/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../issues)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../issues)
 
-[![DMCA Protection](https://images.dmca.com/Badges/dmca_protected_sml_120d.png)](./LICENSE)
+[![DMCA Protection](https://img.shields.io/badge/DMCA-Protected-brightgreen.svg)](https://www.dmca.com/Takedowns.aspx?r=m)
+[![GitHub license](https://img.shields.io/github/license/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](./LICENSE)
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-ETHminerBuildScriptDmW.svg)](./README.md)
 > [ETHminer](https://github.com/ethereum-mining/ethminer) Build Script by [DeadManWalking (DeadManWalkingTO-GitHub)](https://github.com/DeadManWalkingTO)
 
 ETHminerBuildScriptDmW an Auto (Download / Configure / Build) Script for [ETHminer](https://github.com/ethereum-mining/ethminer).
