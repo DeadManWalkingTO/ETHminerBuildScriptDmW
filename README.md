@@ -128,5 +128,5 @@ Aeon Address (AEON):
 
 ## Common Issues
 
-#### :
-Issue [#](../../issues/) | Status: **Solved**.
+#### MinGW version (ETHminerBuildScriptDmW.sh) (Discontinued):
+Issue [#1](../../issues/1) | Status: **Discontinued**.
