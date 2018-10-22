@@ -24,7 +24,7 @@ ETHminerBuildScriptDmW an Auto (Download / Configure / Build) Script for [ETHmin
 Available versions
 * Windows version (ETHminerBuildScriptDmW.bat)
 * Linux version (ETHminerBuildScriptDmW.bash)
-* MinGW version (ETHminerBuildScriptDmW.sh)
+* MinGW version (ETHminerBuildScriptDmW.sh) (**Discontinued**)
 
 ## Table of Contents
 - [Features](#features)
