@@ -2,7 +2,7 @@
 #========== PreStart ==========
 
 #Set version info
-V=1.4.3
+V=3.5.2
 
 #========== Start ==========
 
@@ -12,6 +12,7 @@ echo #
 echo "  ETHminerBuildScriptDmW Version '$V'"
 echo #
 echo "  AUTHOR: DeadManWalking  (DeadManWalkingTO-GitHub)"
+echo "                          (https://github.com/DeadManWalkingTO)"
 echo #
 echo '###############################################################################'
 echo #
@@ -26,6 +27,9 @@ echo #
 echo #
 
 #========== Initializing ==========
+DmW_Project_Name_V=Ethminer
+DmW_Project_Name=ethminer
+DmW_Project_Git=https://github.com/ethereum-mining/ethminer.git
 
 #Change Directory to Home
 echo "=================================================="
@@ -39,31 +43,31 @@ sleep 1s
 
 #========== Run ==========
 
-#Remove old Ethminer's Directory
+#Remove old Project's Directory
 echo "=================================================="
-echo "Remove old Ethminer's Directory"
+echo 'Remove old '$DmW_Project_Name_V"'s Directory"
 echo #
-rm -rf ethminer
+rm -rf $DmW_Project_Name
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
 sleep 1s
 
-#Download Ethminer
+#Download Project
 echo "=================================================="
-echo "Download Ethminer"
+echo 'Download '$DmW_Project_Name_V
 echo #
-git clone --depth=1 --branch=master https://github.com/ethereum-mining/ethminer.git
+git clone --depth=1 --branch=master $DmW_Project_Git
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
 sleep 1s
 
-#Change Directory to Ethminer's
+#Change Directory to Project's
 echo "=================================================="
-echo "Change Directory to Ethminer's"
+echo 'Change Directory to '$DmW_Project_Name_V"'s"
 echo #
-cd ethminer
+cd $DmW_Project_Name
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
@@ -101,7 +105,7 @@ sleep 1s
 echo "=================================================="
 echo "Make Build Directory"
 echo #
-mkdir build
+mkdir -p build
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
@@ -117,23 +121,81 @@ echo "=================================================="
 echo #
 sleep 1s
 
-#Configure Ethminer
+#Configure Project
 echo "=================================================="
-echo "Configure Ethminer"
-echo "CUDA build -- DETHASHCUDA=ON"
-echo "OpenCL build -- DETHASHCL=ON"
-echo "Stratum build -- DETHSTRATUM=ON"
-echo "API build -- DAPICORE=ON"
+echo 'Configure' $DmW_Project_Name_V
 echo #
-cmake .. -DETHASHCUDA=ON -DETHASHCL=ON -DETHSTRATUM=ON -DAPICORE=ON
+
+DmW_MSG="Enable CUDA mining."
+echo $DmW_MSG
+read -p "Enable? (For Yes type Y or y. Anything else for No.) " -n 1 -r
+echo # 
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+DmW_CMAKE_CONFIG=$DmW_CMAKE_CONFIG' -DETHASHCUDA=ON'
+else
+DmW_CMAKE_CONFIG=$DmW_CMAKE_CONFIG' -DETHASHCUDA=OFF'
+fi
+
+DmW_MSG="Enable OpenCL mining."
+echo $DmW_MSG
+read -p "Enable? (For Yes type Y or y. Anything else for No.) " -n 1 -r
+echo # 
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+DmW_CMAKE_CONFIG=$DmW_CMAKE_CONFIG' -DETHASHCL=ON'
+DmWCL=1
+else
+DmW_CMAKE_CONFIG=$DmW_CMAKE_CONFIG' -DETHASHCL=OFF'
+DmWCL=0
+fi
+
+if [ "$DmWCL" == "1" ]
+then
+DmW_MSG="Install AMD binary kernels."
+echo $DmW_MSG
+read -p "Install? (For Yes type Y or y. Anything else for No.) " -n 1 -r
+echo # 
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+DmW_CMAKE_CONFIG=$DmW_CMAKE_CONFIG' -DBINKERN=ON'
+else
+DmW_CMAKE_CONFIG=$DmW_CMAKE_CONFIG' -DBINKERN=OFF'
+fi
+fi
+
+DmW_MSG="Enable D-Bus support, OFF by default."
+echo $DmW_MSG
+read -p "Enable? (For Yes type Y or y. Anything else for No.) " -n 1 -r
+echo # 
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+DmW_CMAKE_CONFIG=$DmW_CMAKE_CONFIG' -DETHDBUS=ON'
+else
+DmW_CMAKE_CONFIG=$DmW_CMAKE_CONFIG' -DETHDBUS=OFF'
+fi
+
+DmW_MSG="Enable API Server."
+echo $DmW_MSG
+read -p "Enable? (For Yes type Y or y. Anything else for No.) " -n 1 -r
+echo # 
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+DmW_CMAKE_CONFIG=$DmW_CMAKE_CONFIG' -DETHDBUS=ON'
+else
+DmW_CMAKE_CONFIG=$DmW_CMAKE_CONFIG' -DETHDBUS=OFF'
+fi
+
+echo #
+cmake .. $DmW_CMAKE_CONFIG
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
 sleep 1s
 
-#Build Ethminer
+#Build Project
 echo "=================================================="
-echo "Build Ethminer"
+echo 'Build '$DmW_Project_Name_V
 echo #
 cmake --build .
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
@@ -141,11 +203,11 @@ echo "=================================================="
 echo #
 sleep 1s
 
-#Copy ethminer to Home Directory
+#Copy Project to Home Directory
 echo "=================================================="
-echo "Copy ethminer to Home Directory"
+echo 'Copy '$DmW_Project_Name_V' to Home Directory'
 echo #
-cp ./ethminer/Release/ethminer ~
+cp ~/$DmW_Project_Name/build/ethminer/Release/ethminer ~
 if [ $? -eq 0 ]; then echo; echo "Done"; else echo; echo "Fail"; exit; fi
 echo "=================================================="
 echo #
