@@ -79,7 +79,7 @@ Dependencies to build ETHminer are required
     * libudev-dev
   * [OpenGL](https://www.khronos.org/opengl/wiki/Getting_Started)
   * [NVidia CUDA](https://developer.nvidia.com/cuda-downloads)
-* MinGW Build (ETHminerBuildScriptDmW.sh)
+* MinGW Build (ETHminerBuildScriptDmW.sh) (**Discontinued**)
   * Auto Install required packages (MinGW)
   * Build Tools (one of the following)
     * [Microsoft Build Tools 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48159)
