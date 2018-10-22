@@ -36,6 +36,7 @@ Available versions
 - [Contribute](#contribute)
 - [License](#license)
 - [Donations](#donations)
+- [Common Issues](#common-issues)
 
 ## Features
 - Auto Clone (Download) latest Master of Ethminer
@@ -124,3 +125,8 @@ Monero Address (XMR):
 
 Aeon Address (AEON):
 * WmssXd9iiPCjjhfVyqYvPzhBuPKkZ5wkVXP5q8L7aYxfPJG5Z8nLyLJXUzxMeuvna9dCEBAmqBzCRWezF6AQqUS51EDJtjAYL
+
+## Common Issues
+
+#### :
+Issue [#](../../issues/) | Status: **Solved**.
