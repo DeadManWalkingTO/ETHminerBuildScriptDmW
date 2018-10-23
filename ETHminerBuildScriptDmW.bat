@@ -3,7 +3,7 @@ rem ========== PreStart ==========
 chcp 65001
 
 rem Set version info
-set V=3.5.2
+set V=3.5.3
 
 rem ========== Start ==========
 
@@ -282,7 +282,6 @@ rem ETHminerBuildScriptDmW was completed
 echo ==================================================
 echo ETHminerBuildScriptDmW was completed successfully.
 echo ==================================================
-goto :EndProgram
 
 rem ========== End ==========
 
