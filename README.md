@@ -21,10 +21,24 @@
 
 ETHminerBuildScriptDmW an Auto (Download / Configure / Build) Script for [ETHminer](https://github.com/ethereum-mining/ethminer).
 
-Available versions
-* Windows version (ETHminerBuildScriptDmW.bat)
-* Linux version (ETHminerBuildScriptDmW.bash)
-* MinGW version (ETHminerBuildScriptDmW.sh) (**Discontinued**)
+- Available versions
+  - Windows version (ETHminerBuildScriptDmW.bat)
+  - Linux version (ETHminerBuildScriptDmW.bash)
+  - MinGW version (ETHminerBuildScriptDmW.sh) (**Discontinued**)
+
+- Supported Operating System
+  - Windows (All versions)
+    - Windows (7 / 8 / 10)
+    - Windows Server (2008 / 2012 / 2016 / 2019)
+  - Linux
+    - Any Distribution
+    - Any Version
+  - Unix
+    - Any Distribution and Version compatible with BASH
+  
+- Supported Architectures:
+  - x86
+  - x64
 
 ## Table of Contents
 - [Features](#features)
