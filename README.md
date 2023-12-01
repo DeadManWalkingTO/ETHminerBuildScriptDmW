@@ -1,5 +1,5 @@
 # ETHminerBuildScriptDmW
-[![HitCount](http://hits.dwyl.io/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../)
+[![Hits](https://hits.sh/github.com/DeadManWalkingTO/ETHminerBuildScriptDmW.svg?style=plastic&label=HitCount)](../../)
 [![GitHub release](https://img.shields.io/github/release/DeadManWalkingTO/ETHminerBuildScriptDmW/all.svg)](../../releases/latest)
 [![GitHub Release Date](https://img.shields.io/github/release-date-pre/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../releases/latest)
 [![GitHub top language](https://img.shields.io/github/languages/top/DeadManWalkingTO/ETHminerBuildScriptDmW.svg)](../../)
